@@ -67,9 +67,9 @@ This project bridges theoretical OS concepts with practical simulation.
 
 ## 🖼 Project Interface
 
-| Process Input             | Simulation Result          | Comparison Table               |
-| ------------------------- | -------------------------- | ------------------------------ |
-| ![Input](screenshot1.png) | ![Result](screenshot2.png) | ![Comparison](screenshot3.png) |
+| Process Input             | Simulation Result          | 
+| ------------------------- | -------------------------- | 
+| ![Input](Screenshot1.png) | ![Result](Screenshot2.png) | 
 
 ---
 
@@ -89,16 +89,6 @@ python cpu_scheduling_simulator.py
 
 > Ensure Python 3.x is installed.
 
-
-## Project Structure
-
-cpu-scheduling-simulator/
-│
-├── cpu_scheduling_simulator.py
-├── screenshot1.png
-├── screenshot2.png
-├── screenshot3.png
-└── README.md
 
 
 ## Sample Execution Flow
