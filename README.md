@@ -1,101 +1,140 @@
 
-# CPU Scheduling Simulator
+# 🖥 CPU Scheduling Simulator
 
-## 📌 Project Overview
+> A GUI-based Operating Systems project that simulates and compares classical CPU scheduling algorithms with real-time performance metrics.
 
-The **CPU Scheduling Simulator** is a Python-based application that simulates various CPU scheduling algorithms used in Operating Systems.
+##  Overview
 
-This project helps in understanding how different scheduling strategies affect:
+The **CPU Scheduling Simulator** is a desktop application developed in Python that provides an interactive environment to simulate, analyze, and compare multiple CPU scheduling algorithms.
 
+It enables users to visualize how scheduling strategies influence:
+
+* Completion Time (CT)
 * Waiting Time (WT)
 * Turnaround Time (TAT)
-* Process Execution Order
-* CPU Utilization
+* Average Performance Metrics
+* Execution Order of Processes
 
-It is designed for educational purposes and academic learning in Operating Systems.
+This project bridges theoretical OS concepts with practical simulation.
 
----
+##  Objectives
 
-## 🚀 Features
+* To implement core CPU scheduling algorithms.
+* To analyze algorithm efficiency using performance metrics.
+* To provide an interactive GUI for real-time simulation.
+* To compare algorithm performance under identical input conditions.
 
-* User-friendly interface
-* Process table creation
-* Simulation of multiple scheduling algorithms
-* Automatic calculation of:
 
-  * Completion Time (CT)
-  * Waiting Time (WT)
-  * Turnaround Time (TAT)
-* Comparative analysis between algorithms
+##  Key Features
 
----
-
-## 🧠 Algorithms Implemented
-
-1. First Come First Serve (FCFS)
-2. Shortest Job First (SJF) – Non-Preemptive
-3. Shortest Remaining Time First (SRTF) – Preemptive
-4. Round Robin (RR)
-
-These are fundamental scheduling algorithms studied in Operating Systems.
+✅ Interactive GUI using Tkinter
+✅ Dynamic process input table
+✅ Multiple scheduling algorithm support
+✅ Automatic metric computation (CT, WT, TAT)
+✅ Average Waiting Time & Turnaround Time calculation
+✅ Algorithm comparison table
+✅ Clean tabular result visualization
 
 ---
 
-## 🛠️ Technologies Used
+## Algorithms Implemented
 
-* Python 3
-* Tkinter (for GUI)
+| Algorithm   | Type           | Description                            |
+| ----------- | -------------- | -------------------------------------- |
+| FCFS        | Non-Preemptive | Executes processes in order of arrival |
+| SJF         | Non-Preemptive | Executes shortest burst time first     |
+| SRTF        | Preemptive     | Preemptive version of SJF              |
+| Round Robin | Preemptive     | Time-slice based fair scheduling       |
+
+
+
+##  Performance Metrics Calculated
+
+* **Completion Time (CT)**
+* **Turnaround Time (TAT) = CT – AT**
+* **Waiting Time (WT) = TAT – BT**
+* **Average Waiting Time**
+* **Average Turnaround Time**
+
+
+
+## 🛠 Tech Stack
+
+* **Language:** Python 3
+* **GUI Framework:** Tkinter
+* **Version Control:** Git
+* **Repository Hosting:** GitHub
 
 ---
 
-## ▶️ How to Run the Project
+## 🖼 Project Interface
 
-### Step 1: Clone the Repository
+| Process Input             | Simulation Result          | Comparison Table               |
+| ------------------------- | -------------------------- | ------------------------------ |
+| ![Input](screenshot1.png) | ![Result](screenshot2.png) | ![Comparison](screenshot3.png) |
 
-```bash
+---
+
+## ▶️ Installation & Execution
+
+### 1️⃣ Clone the Repository
+
 git clone https://github.com/lathikaganesan40-hash/cpu-scheduling-simulator.git
-```
 
-### Step 2: Navigate to the Project Folder
+### 2️⃣ Navigate to Project Directory
 
-```bash
 cd cpu-scheduling-simulator
-```
 
-### Step 3: Run the Program
+### 3️⃣ Run the Application
 
-```bash
 python cpu_scheduling_simulator.py
-```
 
-Make sure Python is installed on your system.
+> Ensure Python 3.x is installed.
 
----
 
-## 📊 Learning Outcomes
+## Project Structure
 
-This project helps in understanding:
+cpu-scheduling-simulator/
+│
+├── cpu_scheduling_simulator.py
+├── screenshot1.png
+├── screenshot2.png
+├── screenshot3.png
+└── README.md
 
-* Difference between preemptive and non-preemptive scheduling
-* Impact of burst time and arrival time
-* Performance comparison between algorithms
-* Real-world CPU scheduling behavior
 
----
+## Sample Execution Flow
 
-## 📷 Sample Output
+1. Select scheduling algorithm
+2. Enter number of processes
+3. Provide arrival time & burst time
+4. Click "Run Simulation"
+5. View calculated metrics and comparison results
 
-The simulator displays:
 
-* Process execution order
-* Calculated CT, WT, TAT
-* Average Waiting Time
-* Average Turnaround Time
+## Academic Relevance
 
----
+This simulator demonstrates:
 
-## 👩‍💻 Author
+* Preemptive vs Non-Preemptive Scheduling
+* Context Switching impact
+* Starvation and fairness concepts
+* Scheduling efficiency comparison
 
-Lathika G, Pothumani A, Sankara Narayani T
-B.E – CSE
-II- year 
+## Future Improvements
+
+* Add graphical Gantt Chart visualization
+* Add Priority Scheduling implementation
+* Add export-to-PDF report feature
+* Convert to web-based version (Flask / Django)
+
+## Authors
+
+* Lathika G
+* Pothumani A
+* Sankara Narayani T
+
+B.E – Computer Science and Engineering
+II Year
+
+
