@@ -27,15 +27,13 @@ This project bridges theoretical OS concepts with practical simulation.
 
 ##  Key Features
 
-✅ Interactive GUI using Tkinter
-✅ Dynamic process input table
-✅ Multiple scheduling algorithm support
-✅ Automatic metric computation (CT, WT, TAT)
-✅ Average Waiting Time & Turnaround Time calculation
-✅ Algorithm comparison table
-✅ Clean tabular result visualization
-
----
+* Interactive GUI using Tkinter
+* Dynamic process input table
+* Multiple scheduling algorithm support
+* Automatic metric computation (CT, WT, TAT)
+* Average Waiting Time & Turnaround Time calculation
+* Algorithm comparison table
+* Clean tabular result visualization
 
 ## Algorithms Implemented
 
@@ -58,7 +56,7 @@ This project bridges theoretical OS concepts with practical simulation.
 
 
 
-## 🛠 Tech Stack
+## Tech Stack
 
 * **Language:** Python 3
 * **GUI Framework:** Tkinter
