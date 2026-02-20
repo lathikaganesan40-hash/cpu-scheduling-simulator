@@ -258,7 +258,7 @@ tk.Label(scroll_content, text="CPU SCHEDULING ALGORITHM SIMULATOR", font=("Helve
 top_row = tk.Frame(scroll_content, bg="#f0f4f8")
 top_row.pack(fill="both", expand=True, padx=20)
 
-# Input Section
+
 left_panel = tk.Frame(top_row, bg="#eef2f7", bd=2, relief="groove", padx=15, pady=15)
 left_panel.pack(side="left", fill="y", padx=5)
 
@@ -288,7 +288,7 @@ input_scroll.pack(side="right", fill="y")
 
 tk.Button(left_panel, text="RUN SIMULATION", bg="#27ae60", fg="white", font=("Arial", 10, "bold"), height=2, command=run_simulation).pack(fill="x", side="bottom", pady=10)
 
-# Right Results Section
+
 right_panel = tk.Frame(top_row, bg="#f0f4f8")
 right_panel.pack(side="right", fill="both", expand=True, padx=10)
 
@@ -312,7 +312,6 @@ for col in comp_cols:
 comparison_table.tag_configure("best", background="#d4edda")
 comparison_table.pack(fill="x")
 
-# Bottom Gantt Section
 gantt_container = tk.Frame(scroll_content, bg="#f0f4f8")
 gantt_container.pack(fill="x", pady=20)
 tk.Label(gantt_container, text="Visual Timeline (Gantt Chart)", font=("Arial", 12, "bold"), bg="#f0f4f8").pack()
