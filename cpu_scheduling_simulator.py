@@ -5,7 +5,7 @@ import copy
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
-# ---------------- Process Class ----------------
+
 class Process:
     def __init__(self, pid, at, bt, pr=0):
         self.pid = pid
@@ -14,7 +14,6 @@ class Process:
         self.pr = pr
         self.ct, self.tat, self.wt = 0, 0, 0
 
-# ---------------- Algorithms ----------------
 def fcfs(processes):
     time, gantt = 0, []
     processes.sort(key=lambda x: x.at)
@@ -125,8 +124,6 @@ def round_robin(processes, q):
             completed.append(p)
     return completed, gantt
 
-# ---------------- GUI FUNCTIONS ----------------
-
 def create_fields():
     try:
         val = num_procs_entry.get()
@@ -236,7 +233,6 @@ def auto_compare(q):
         tag = "best" if wt == min_wt else ""
         comparison_table.insert("", "end", values=(algo, f"{wt:.2f}", f"{tat:.2f}"), tags=(tag,))
 
-# ---------------- GUI LAYOUT ----------------
 
 root = tk.Tk()
 root.title("CPU Scheduling Simulator")
